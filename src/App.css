@@ -1,38 +1,27 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "HelveticaUltraLightRegular";
+  src: local("HelveticaUltraLightRegular"),
+    url(./assets/fonts/HelveticaUltraLt_0.ttf) format("truetype");
+  font-weight: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "HelveticaCondensedRegular";
+  src: local("HelveticaCondensedRegular"),
+    url(./assets/fonts/ps.ttf) format("truetype");
+  font-weight: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: "RobotoLight";
+  src: local("RobotoLight"),
+    url(./assets/fonts/Roboto-Light_0.ttf) format("truetype");
+  font-weight: light;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+  font-family: "RobotoRegular";
+  src: local("RobotoRegular"),
+    url(./assets/fonts/Roboto-Regular_0.ttf) format("truetype");
+  font-weight: normal;
 }
