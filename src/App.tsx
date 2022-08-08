@@ -6,7 +6,7 @@ import Main from "./pages/main";
 function App() {
   return (
     <CandidateProvider>
-      <Main />;
+      <Main />
     </CandidateProvider>
   );
 }

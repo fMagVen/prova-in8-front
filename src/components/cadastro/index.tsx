@@ -1,8 +1,11 @@
 import { Button, Form, Wrapper } from "./styles";
 import React, { useState } from "react";
-import { signupCandidate } from "../../services/userApi";
+import { signupCandidate } from "../../services/candidateApi";
+import useNewCandidate from "../../hooks/useNewCandidate";
 
 export default function Cadastro() {
+  const { newCandidate, setNewCandidate, setCurrentCandidate } =
+    useNewCandidate();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -17,8 +20,9 @@ export default function Cadastro() {
   async function cadastrar(e: React.FormEvent) {
     e.preventDefault();
     try {
-      const response = await signupCandidate(formData);
-      console.log(response);
+      await signupCandidate(formData);
+      setNewCandidate(!newCandidate);
+      setCurrentCandidate(formData);
     } catch (e) {
       alert(e);
     }
