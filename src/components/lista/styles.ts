@@ -6,8 +6,15 @@ export const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  div {
-    color: #fff;
+  th {
+    font-family: "RobotoRegular";
+    color: #012d51;
+    border-right: 1px solid #29abe2;
+    border-bottom: 1px solid #29abe2;
+    border-left: 1px solid #29abe2;
+  }
+  tr {
+    border: 1px solid #29abe2;
   }
 `;
 

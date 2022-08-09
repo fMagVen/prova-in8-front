@@ -51,6 +51,7 @@ export default function Lista() {
           <tbody>
             {candidates.map((candidate) => (
               <tr>
+                <td>{candidates.indexOf(candidate) + 1}</td>
                 <td>{candidate.name}</td>
                 <td>{candidate.email}</td>
                 <td>{candidate.birth}</td>

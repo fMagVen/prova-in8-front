@@ -5,10 +5,15 @@ export default function Footer() {
   const { currentCandidate } = useNewCandidate();
   return (
     <Wrapper>
-      <div>{currentCandidate.name}</div>
-      <div>{currentCandidate.email}</div>
-      <div>{currentCandidate.birth}</div>
-      <div>{currentCandidate.phone}</div>
+      <div>
+        <p>{currentCandidate.name}</p>
+        <br />
+        <p>{currentCandidate.email}</p>
+        <br />
+        <p>{currentCandidate.birth}</p>
+        <br />
+        <p>{currentCandidate.phone}</p>
+      </div>
     </Wrapper>
   );
 }
